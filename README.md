@@ -49,13 +49,13 @@ The response will include data, total, page, and totalPages.
 
 
 #### B. Test Caching
-  1 First, get the ID of any product from the pagination response above.
+  1. First, get the ID of any product from the pagination response above.
 
-  2.Request that product by its ID. The first time, the console will log "Fetching from DB...".
+  2. Request the product by its ID. The first time, the console will log "Fetching from DB...".
 
   curl http://localhost:3000/products/YOUR_PRODUCT_ID
 
-  3.Immediately request the same product again. This time, you will get an instant response, and there will be no log in the console, indicating the response was served from the cache.
+  3. Immediately request the same product again. This time, you will get an instant response, and there will be no log in the console, indicating the response was served from the cache.
 
 ### C. Test Rate Limiting
 The API is configured to allow only 5 requests every 10 seconds.
